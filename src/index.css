@@ -1,13 +1,69 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
 }
+
+.square {
+  background: #fff;
+  border: 2px solid #666;
+  float: left;
+  font-size: 200%;
+  font-weight: bold;
+  line-height: 100px;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-board {
+  border: 2px solid #666;
+}
+
+.game-endgame {
+  position: absolute;
+  display: flex;
+  background-color: rgba(0, 255, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 500%;
+}
+
+.game-control {
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.reset-button {
+  font-size: 150%;
+}
+
+.arrow-key:hover {
+  color: red;
+}
+
+.arrow-key:active {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+
