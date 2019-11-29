@@ -68,9 +68,9 @@ body {
 
 @media only screen and (max-width: 768px) {
   .square {
-    width: min(90px, 20vw);
-    height: min(90px, 20vw);
-    line-height: min(90px, 20vw);
+    width: 20vw;
+    height: 20vw;
+    line-height: 20vw;
   }
 
   .game-control {
