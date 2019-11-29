@@ -15,11 +15,11 @@ body {
   float: left;
   font-size: 200%;
   font-weight: bold;
-  line-height: 100px;
-  height: 100px;
+  line-height: 90px;
+  height: 90px;
   padding: 0;
   text-align: center;
-  width: 100px;
+  width: 90px;
 }
 
 .game {
@@ -32,9 +32,9 @@ body {
     flex-direction: row;
 }
 
-.game-board {
+/* .game-board {
   border: 2px solid #666;
-}
+} */
 
 .game-endgame {
   position: absolute;
@@ -50,7 +50,7 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  margin-left: 50px;
+  margin-left: 30px;
   margin-top: 30px;
 }
 
@@ -64,6 +64,22 @@ body {
 
 .arrow-key:active {
   color: rgba(255, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .square {
+    width: min(90px, 20vw);
+    height: min(90px, 20vw);
+    line-height: min(90px, 20vw);
+  }
+
+  .game-control {
+    margin-left: 0px;
+  }
+
+  .game-row {
+    flex-direction: column;
+  }
 }
 
 

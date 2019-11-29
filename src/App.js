@@ -202,7 +202,9 @@ class App extends React.Component {
   }
   
   render() {
-    var screenLength = 100 * this.state.board.length + 4 * (this.state.board.length + 1);
+    var screenLength = (window.innerWidth <= 768) ? 
+                        Math.min(90, 0.2 * window.innerWidth) * this.state.board.length + 4 * this.state.board.length :
+                        90 * this.state.board.length + 4 * this.state.board.length;
     return (
         <div className="game">
             <div className="game-info">
